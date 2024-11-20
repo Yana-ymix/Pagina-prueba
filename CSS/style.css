@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Header con Flexbox */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main con tabla de menú y aside */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Tabla del menú */
+.menu table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.menu th, .menu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.menu th {
+    background-color: #333;
+    color: white;
+}
+
+/* Aside con el plato principal */
+.plato-principal {
+    width: 35%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.plato-principal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Galería de imágenes con Flexbox */
+.galeria {
+    margin-top: 30px;
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.galeria-container img {
+    width: 30%;
+    height: auto;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-container a {
+    color: #00aced;
+    text-decoration: none;
+}
